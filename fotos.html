@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<title>El Show de Kristell</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+body {
+    background-color: lightpink;
+}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">INICIO</a>
+    
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>EL SHOW DE KRISTELL</b></h1>
+  <p><b>GALERIA DE FOTOS</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Presione</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="https://i.ibb.co/QcRpm8g/facebook18-1549036550756.jpg" style="width:100%">
+    <img src="https://i.ibb.co/98pyQXW/facebook17-1549036590812.jpg" style="width:100%">
+    <img src="https://i.ibb.co/4Pnj0gh/facebook16-1549036631237.jpg" style="width:100%">
+    <img src="https://i.ibb.co/BZCpWD0/facebook14-1549036711547.jpg" style="width:100%">
+    <img src="https://i.ibb.co/TqMcjQv/facebook12-1549036785067.jpg" style="width:100%">
+    <img src="https://i.ibb.co/BwTV0pb/facebook11-1549036808949.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="https://i.ibb.co/gZ8FsPn/facebook9-1549036889359.jpg" style="width:100%">
+    <img src="https://i.ibb.co/1JJ9K8F/facebook8-1549036914358.jpg" style="width:100%">
+    <img src="https://i.ibb.co/B6vzKKb/facebook7-1549036954786.jpg" style="width:100%">
+    <img src="https://i.ibb.co/fv2H3SL/facebook6-1549031551929.jpg" style="width:100%">
+    <img src="https://i.ibb.co/QKVFfvK/facebook5-1549031591307.jpg" style="width:100%">
+    <img src="https://i.ibb.co/6vyk1Xy/facebook4-1549031634237.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="https://i.ibb.co/NYtj92f/facebook10-1549036863632.jpg" style="width:100%">
+    <img src="https://i.ibb.co/nbcY2nv/facebook3-1549031657106.jpg" style="width:100%">
+    <img src="https://i.ibb.co/fn1Tcw8/facebook2-1549031689664.jpg" style="width:100%">
+    <img src="https://i.ibb.co/kJ91Q7n/facebook-1549017211856.jpg" style="width:100%">
+    <img src="https://i.ibb.co/cLn8ZDx/IMG-20181121-WA0009.jpg" style="width:100%">
+    <img src="https://i.ibb.co/87QDGm3/IMG-20181121-WA0008.jpg" style="width:100%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <h4>Siguenos</h4>
+    <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/kristelMichellFasabi/" title="Facebook"><i class="fa fa-facebook"></i></a>
+    <!--<a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>-->
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+    <!--<a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>-->
+    <p>Creado por: <a href="https://amazing-panini-1ea55c.netlify.com/" target="_blank">Segundo Fasabi Bartra</a></p>
+  
+     
+      
+  </footer>
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
