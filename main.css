@@ -8,9 +8,10 @@
 body {
     font-family: 'Pacifico', cursive;
     padding: 10px;
-    background-color: #dda0dd;
+    background-color: azure;
   
 }
+
 
 
 /* Header/Blog Title */
@@ -88,7 +89,7 @@ h3 {
 
 /* Add a card effect for articles */
 .card {
-    background-color: #ffb6c1;
+    background-color: whitesmoke;
     padding: 20px;
     margin-top: 20px;
     border-radius: 5px;
@@ -177,20 +178,20 @@ footer {
 }
 
 img {
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
  .w3-container {
-  background-color: #f08080;
+  background-color: whitesmoke;
    font-family: 'Pacifico', cursive;
 }
 
 .w3-row {
-  background-color: #f08080;
+  background-color: whitesmoke;
 }
 
 .w3-quarter {
-  background-color: #f08080;
+  background-color: whitesmoke;
 }
 
 .item-1, 
@@ -198,11 +199,11 @@ img {
 .item-3 {
 	position: absolute;
   display: block;
-	top: 2em;
+	top: 4em;
   color: brown;
   width: 60%;
   
-  font-size: 2em;
+  font-size: 1.5em;
 
 	animation-duration: 20s;
 	animation-timing-function: ease-in-out;
