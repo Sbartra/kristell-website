@@ -19,6 +19,7 @@ body {
     padding: 120px;
     text-align: center;
     background: url('https://i.ibb.co/fS1TL8y/sound2.jpg');
+    background-repeat: no-repeat;
   border-radius: 5px;
 }
 
